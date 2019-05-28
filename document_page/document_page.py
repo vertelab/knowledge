@@ -158,7 +158,7 @@ class document_page_history(models.Model):
     _rec_name = "create_date"
 
     page_id = fields.Many2one('document.page', 'Page')
-    summary = fields.Char('Summary', size=256, select=True)
+    summary = fields.Char('Summary', size=256,)
     content = fields.Text("Content")
     create_date = fields.Datetime("Date")
     create_uid = fields.Many2one('res.users', "Modified By")
